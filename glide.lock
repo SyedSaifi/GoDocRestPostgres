@@ -1,0 +1,22 @@
+hash: 366f0c26418eec3f189f20284ecab413799396ab0c885cb660e837b88745060d
+updated: 2018-04-17T22:43:14.450905255+05:30
+imports:
+- name: github.com/dgrijalva/jwt-go
+  version: 06ea1031745cb8b3dab3f6a236daf2b0aa468b7e
+  subpackages:
+  - request
+- name: github.com/gorilla/context
+  version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
+- name: github.com/gorilla/mux
+  version: b57cb1605fd11ba2ecfa7f68992b4b9cc791934d
+- name: github.com/lib/pq
+  version: d34b9ff171c21ad295489235aec8b6626023cd04
+  subpackages:
+  - oid
+- name: github.com/pkg/errors
+  version: 816c9085562cd7ee03e7f8188a1cfd942858cded
+testImports:
+- name: github.com/onsi/ginkgo
+  version: 6d8be987c536ebd84576a5a46208e7b7a3c796b0
+- name: github.com/onsi/gomega
+  version: b7d1a52235cc433a76c556aa3f4229e63b95e7da

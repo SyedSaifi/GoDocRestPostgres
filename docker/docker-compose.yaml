@@ -1,0 +1,30 @@
+version: '2'
+services:
+
+    # Application containers
+    go:
+        build:
+            context: ../
+            dockerfile: docker/go/Dockerfile
+        command: ["go", "run", "main.go"]
+        ports:
+            - "6000:6000"
+        links:
+            - postgres
+        environment:
+            DEBUG: 'true'
+            PORT: '6000'
+
+    postgres:
+        build: db/.
+        restart: unless-stopped
+        ports:
+            - "5432:5432"
+        environment:
+            LC_ALL: C.UTF-8
+            POSTGRES_USER: docker
+            POSTGRES_PASSWORD: docker
+            POSTGRES_DB: docker
+
+
+
